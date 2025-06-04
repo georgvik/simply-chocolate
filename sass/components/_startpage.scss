@@ -1,0 +1,76 @@
+.start-page {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 72px;
+}
+.start-page__block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 335px;
+  height: 620px;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0) 0%,
+    rgba(17, 17, 17, 0.4) 100%
+  );
+  background-image: url(/img/start-page/chocolate-covered-cocoa-powder-mob.jpg);
+  background-size: cover;
+
+  border-radius: 30px;
+}
+.start-page__discription {
+  margin: 0 auto;
+  margin-top: 395px;
+  margin-bottom: 80px;
+  text-align: center;
+  // width: 295px;
+}
+.start-page__discription--font {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  color: getColor("secondaryText");
+}
+.buynow {
+  margin: 0;
+  padding: 0;
+  padding: 12px 28px 12px 28px;
+  width: 120px;
+  height: 41px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: getColor("primary");
+  border-width: 1px;
+  font-weight: 600;
+  background-color: getColor("primary");
+  color: getColor("secondaryText");
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-resolution: 2dppx) {
+  .start-page__block {
+    background-image: url(/img/start-page/chocolate-covered-cocoa-powder-mob@2x.jpg);
+  }
+}
+.howmade {
+  margin: 0;
+  padding: 0;
+  padding: 12px 28px 12px 28px;
+  margin-left: 12px;
+  width: 159px;
+  height: 41px;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: getColor("secondaryText");
+  border-width: 1px;
+  font-weight: 600;
+  background: none;
+  color: getColor("secondaryText");
+}

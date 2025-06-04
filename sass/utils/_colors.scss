@@ -1,0 +1,11 @@
+$colors: (
+  "primaryText": #111111,
+  "secondaryText": #ffffff,
+  "primary": #fd9222,
+  "secondary": #1e1823,
+  "button": #fafafa,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
