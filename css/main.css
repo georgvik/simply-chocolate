@@ -662,12 +662,12 @@ a {
 
 .subscribe {
   padding: 62px 20px;
-  background-image: url(/img/subcribe/subcribe-mobile.jpg);
+  background-image: url(../img/subcribe/subcribe-mobile.jpg);
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .subscribe {
-    background-image: url(/img/subcribe/subcribe-mobile@2x.jpg);
+    background-image: url(../img/subcribe/subcribe-mobile@2x.jpg);
   }
 }
 .subscribe .button {
