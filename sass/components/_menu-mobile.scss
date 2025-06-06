@@ -6,20 +6,16 @@
   height: 100vh;
   padding: 136px 46px 0 50px;
   background-color: getColor("primaryText");
-  transform: translateX(100%);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  transition: opacity 550ms linear, visibility 250ms linear,
-    transform 350ms linear;
+  transition: opacity 550ms linear, visibility 250ms linear;
 }
 .menu-mobile.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-  transform: translateX(0%);
 }
 .menu-mobile__close-btn {
   display: flex;
