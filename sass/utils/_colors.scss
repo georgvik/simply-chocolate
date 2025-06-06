@@ -4,6 +4,8 @@ $colors: (
   "primary": #fd9222,
   "secondary": #1e1823,
   "button": #fafafa,
+  "hover-btn": #fcf1e0,
+  "label": #000000,
 );
 
 @function getColor($key) {

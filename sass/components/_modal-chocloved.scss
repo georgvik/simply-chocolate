@@ -1,0 +1,110 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(164, 183, 205, 0.8);
+  transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-chocloved {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 311px;
+  height: 471px;
+  padding: 32px 24px;
+  //   border: 1px solid red;
+  border-radius: 15px;
+  background-color: getColor("button");
+}
+
+.modal-chocloved_title {
+  width: 255px;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: getColor("primaryText");
+}
+.modal-chocloved__icon-cl-menu {
+  stroke: getColor("primaryText");
+}
+.modal-chocloved__bt-close {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    background-color: getColor("hover-btn");
+
+    .modal-chocloved__icon-cl-menu {
+      stroke: getColor("primary");
+    }
+  }
+}
+.form_phone {
+  margin: 0;
+  margin-bottom: 14px;
+}
+input,
+textarea {
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  width: 100%;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: rgba(17, 17, 17, 0.05);
+  border-width: 1.5px;
+  box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.03);
+  color: getColor("primaryText");
+  text-align: left;
+}
+textarea {
+  height: 91px;
+  resize: none;
+  margin-bottom: 18px;
+}
+
+input,
+textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-buynow__button {
+  width: 109px;
+  height: 41px;
+  background: getColor("primary");
+  border-radius: 100px;
+  border: none;
+  padding: 12px 28px 12px 28px;
+  display: flex;
+  position: relative;
+  color: getColor("secondaryText");
+  font-weight: 600;
+  &:hover {
+    background: getColor("hover-btn");
+    color: getColor("primary");
+  }
+}

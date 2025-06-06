@@ -19,6 +19,10 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+    &:hover {
+      background: getColor("hover-btn");
+      color: getColor("primary");
+    }
   }
 }
 

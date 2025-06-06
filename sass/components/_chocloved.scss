@@ -28,6 +28,11 @@
     color: getColor("primaryText");
     text-align: center;
     font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      background-color: getColor("primary");
+      color: getColor("secondaryText");
+    }
   }
 }
 .choc-loved__title {
@@ -47,7 +52,7 @@
   position: absolute;
   top: -40px;
   left: 50%;
-  z-index: 10;
+  z-index: 1;
   transform: translateX(-50%);
 }
 .choc-loved__swiper-title {

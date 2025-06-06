@@ -23,16 +23,68 @@
           <use href="./img/svg/icomoon/symbol-defs.svg#icon-header-icon"></use>
         </svg>
       </a>
-      <button class="button header__menu">
+      <button
+        type="button"
+        class="button header__menu js-open-menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
         <svg width="22" height="22">
           <use
             href="./img/svg/icomoon/symbol-defs.svg#icon-paragraph-justify"
           ></use>
         </svg>
       </button>
+
+      <div class="menu-mobile js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-mobile__close-btn js-close-menu">
+          <!-- <div class="menu-mobile__close-btn"> -->
+          <svg width="12" height="12" class="menu-mobile__close-icon">
+            <use href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"></use>
+          </svg>
+          <!-- </div> -->
+        </button>
+        <ul class="menu-mobile__list">
+          <li><a href="#home" class="menu-mobile__link">Home</a></li>
+          <li>
+            <a href="#howmade" class="menu-mobile__link">How it’s made?</a>
+          </li>
+          <li>
+            <a href="#ourproduct" class="menu-mobile__link">Our products</a>
+          </li>
+          <li>
+            <a href="#topselers" class="menu-mobile__link">Top sellers</a>
+          </li>
+          <li>
+            <a href="#chocisloved" class="menu-mobile__link"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+        <div class="menu-mobile__social-block">
+          <ul class="menu-mobile__social-list">
+            <li>
+              <a href="" class="menu-mobile__social-link">
+                <svg width="22" height="22" class="menu-mobile__social-icon">
+                  <use
+                    href="./img/svg/icomoon/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href="" class="menu-mobile__social-link"
+                ><svg width="22" height="22" class="menu-mobile__social-icon">
+                  <use
+                    href="./img/svg/icomoon/symbol-defs.svg#icon-twitter"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="container start-page">
+      <section class="container start-page" id="home">
         <div class="start-page__block">
           <div class="start-page__discription">
             <p class="start-page__discription--font">
@@ -115,104 +167,112 @@
           step of our process adds up to one exceptional taste sensation.
         </p>
         <ul class="taste__list">
-          <li class="taste__item taste__item--bkcolorprim">
-            <img
-              srcset="
-                ./img/Chocolate/milk-chocolate@1x.png 1x,
-                ./img/Chocolate/milk-chocolate@2x.png 2x
-              "
-              src="./img/Chocolate/milk-chocolate@1x.png"
-              alt="milk-chocolate"
-              class="taste-img"
-            />
-            <h2 class="taste__list-title taste__list-title--color">
-              MILK CHOCOLATE
-            </h2>
-            <div class="tasteHover__discription">
-              <h3>Milk chocolate</h3>
-              <p>
-                Milk chocolate is a solid chocolate confectionery containing
-                cocoa, sugar and milk. It is the most consumed type of
-                chocolate. Chocolate was originally sold and consumed as a
-                beverage in pre-Columbian times. Although four-fifths of all
-                milk chocolate is sold in the United States and Europe,
-                increasingly large amounts are consumed in China and Latin
-                America.
-              </p>
+          <li class="taste__item">
+            <div class="taste__item-block taste__item-block--bkcolorprim">
+              <img
+                srcset="
+                  ./img/Chocolate/milk-chocolate@1x.png 1x,
+                  ./img/Chocolate/milk-chocolate@2x.png 2x
+                "
+                src="./img/Chocolate/milk-chocolate@1x.png"
+                alt="milk-chocolate"
+                class="taste-img"
+              />
+              <h2 class="taste__list-title taste__list-title--color">
+                MILK CHOCOLATE
+              </h2>
+              <div class="tasteHover__block">
+                <h3 class="tasteHover__title">Milk chocolate</h3>
+                <p class="tasteHover__discription">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe,
+                  increasingly large amounts are consumed in China and Latin
+                  America.
+                </p>
+              </div>
             </div>
           </li>
           <li class="taste__item">
-            <img
-              srcset="
-                ./img/Chocolate/milk@1x.jpg 1x,
-                ./img/Chocolate/milk@2x.jpg 2x
-              "
-              src="./img/Chocolate/milk@1x.jpg"
-              alt="milk"
-              class="taste-img"
-            />
-            <h3 class="taste__list-title">Milk</h3>
-            <div class="tasteHover__discription">
-              <h2>Milk</h2>
-              <p>
-                Milk is a white liquid food produced by the mammary glands of
-                mammals. It is the primary source of nutrition for young mammals
-                (including breastfed human infants) before they are able to
-                digest solid food.Early-lactation milk, which is called
-                colostrum, contains antibodies that strengthen the immune
-                system, and thus reduces the risk of many diseases. Milk
-                contains many nutrients, including protein and lactose.
-              </p>
+            <div class="taste__item-block">
+              <img
+                srcset="
+                  ./img/Chocolate/milk@1x.jpg 1x,
+                  ./img/Chocolate/milk@2x.jpg 2x
+                "
+                src="./img/Chocolate/milk@1x.jpg"
+                alt="milk"
+                class="taste-img"
+              />
+              <h3 class="taste__list-title">Milk</h3>
+              <div class="tasteHover__block">
+                <h2 class="tasteHover__title">Milk</h2>
+                <p class="tasteHover__discription">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system, and thus reduces the risk of many diseases.
+                  Milk contains many nutrients, including protein and lactose.
+                </p>
+              </div>
             </div>
           </li>
-          <li class="taste__item taste__item--bkcolor">
-            <img
-              srcset="
-                ./img/Chocolate/nuts@1x.png 1x,
-                ./img/Chocolate/nuts@2x.png 2x
-              "
-              src="./img/Chocolate/nuts@1x.png"
-              alt="nuts"
-              class="taste-img"
-            />
-            <h3 class="taste__list-title taste__list-title--color">nuts</h3>
-            <div class="tasteHover__discription">
-              <h3>nuts</h3>
-              <p>
-                Almonds, pistachios, and walnuts are some types of nuts that
-                contain healthy nutrients. When eaten as part of a
-                nutrient-dense diet, these 9 nuts may offer benefits such as
-                reducing your risk of heart disease. They’re a good source of
-                fiber, healthy fats, and plant protein. Plus, they’re great on
-                their own, paired with fruit, or added to dishes like salads,
-                desserts, and grains.
-              </p>
+          <li class="taste__item --bkcolor">
+            <div class="taste__item-block taste__item-block--bkcolor">
+              <img
+                srcset="
+                  ./img/Chocolate/nuts@1x.png 1x,
+                  ./img/Chocolate/nuts@2x.png 2x
+                "
+                src="./img/Chocolate/nuts@1x.png"
+                alt="nuts"
+                class="taste-img"
+              />
+              <h3 class="taste__list-title taste__list-title--color">nuts</h3>
+              <div class="tasteHover__block">
+                <h3 class="tasteHover__title">nuts</h3>
+                <p class="tasteHover__discription">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own, paired with fruit, or added to dishes like salads,
+                  desserts, and grains.
+                </p>
+              </div>
             </div>
           </li>
           <li class="taste__item">
-            <img
-              srcset="./img/Chocolate/semi-sweet@1x.jpg 1x. ./img/Chocolate/semi-sweet@2x.jpg 2x"
-              src="./img/Chocolate/semi-sweet@1x.jpg"
-              alt="semi-sweet chocolate"
-              class="taste-img"
-            />
-            <h3 class="taste__list-title">sEMI - SWEET CHOCOLATE</h3>
-            <div class="tasteHover__discription">
-              <h3>sEMI - SWEET CHOCOLATE</h3>
-              <p>
-                Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One
-                of the best ways to gain an understanding of this type of
-                chocolate is to compare it to a different type of chocolate.
-                Semisweet is darker than milk chocolate. In a taste comparison,
-                it has a slightly bitter taste whereas milk chocolate is sweeter
-                and more mellow. This delectable flavor of chocolate is very
-                versatile.
-              </p>
+            <div class="taste__item-block">
+              <img
+                srcset="./img/Chocolate/semi-sweet@1x.jpg 1x. ./img/Chocolate/semi-sweet@2x.jpg 2x"
+                src="./img/Chocolate/semi-sweet@1x.jpg"
+                alt="semi-sweet chocolate"
+                class="taste-img"
+              />
+              <h3 class="taste__list-title">sEMI - SWEET CHOCOLATE</h3>
+              <div class="tasteHover__block">
+                <h3 class="tasteHover__title">sEMI - SWEET CHOCOLATE</h3>
+                <p class="tasteHover__discription">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow. This delectable flavor
+                  of chocolate is very versatile.
+                </p>
+              </div>
             </div>
           </li>
         </ul>
       </section>
-      <section class="how-made container">
+      <section class="how-made container" id="howmade">
         <h2 class="how-made__title">
           hOW IT’S <span class="title--color">made?</span>
         </h2>
@@ -262,7 +322,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-products container">
+      <section class="our-products container" id="ourproduct">
         <h2 class="our-products__primary-title">
           <span class="title--color">Our_</span>products
         </h2>
@@ -384,7 +444,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="top-selers container">
+      <section class="top-selers container" id="topselers">
         <h2 class="top-selers__title">
           <span class="title--color">tOp</span> Sellers
         </h2>
@@ -429,9 +489,113 @@
             />
           </li>
         </ul>
-        <button class="button">Buy now</button>
+        <button type="button" class="button" data-modal-open>Buy now</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal-buynow">
+            <h2 class="modal-buynow_title">
+              <span class="title--color">bUY</span> nOW
+            </h2>
+            <div class="modal-buynow_bt-close">
+              <svg
+                width="12"
+                hegjt="12"
+                class="modal-buynow__icon-cl-menu"
+                data-modal-close
+              >
+                <use
+                  href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"
+                ></use>
+              </svg>
+            </div>
+            <ul class="modal-buynow__list">
+              <li>
+                <div class="modal-buynow__item-block">
+                  <img
+                    srcset="
+                      ./img/modal-buynow/kinder-chocolate-white-nuts.jpg    1x,
+                      ./img/modal-buynow/kinder-chocolate-white-nuts@2x.jpg 2x
+                    "
+                    src="./img/modal-buynow/kinder-chocolate-white-nuts.jpg"
+                    alt="kinder-chocolate"
+                  />
+                  <button type="button">100g</button>
+                </div>
+              </li>
+              <li>
+                <div class="modal-buynow__item-block">
+                  <img
+                    srcset="
+                      ./img/modal-buynow/praline-kinder-chocolate-bonbon-milk.jpg    1x,
+                      ./img/modal-buynow/praline-kinder-chocolate-bonbon-milk@2x.jpg 2x
+                    "
+                    src="./img/modal-buynow/praline-kinder-chocolate-bonbon-milk.jpg"
+                    alt="kinder-chocolate"
+                  />
+                  <button type="button">200g</button>
+                </div>
+              </li>
+              <li>
+                <div class="modal-buynow__item-block">
+                  <img
+                    srcset="
+                      ./img/modal-buynow/transparent-dark-chocolate.jpg    1x,
+                      ./img/modal-buynow/transparent-dark-chocolate@2x.jpg 2x
+                    "
+                    src="./img/modal-buynow/transparent-dark-chocolate.jpg"
+                    alt="kinder-chocolate"
+                  />
+                  <button type="button">200g</button>
+                </div>
+              </li>
+            </ul>
+            <form class="modal-buynow__form">
+              <label for="name">Personal information</label>
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="text" placeholder="Surname" />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+              <label for="phone">Phone number</label>
+              <div class="form_phone">
+                <div class="phone-icone">
+                  <svg width="24" height="18">
+                    <use
+                      href="./img/svg/icomoon/symbol-defs.svg#icon-Frame"
+                    ></use>
+                  </svg>
+                  <p class="phone-icone__discription">+380</p>
+                </div>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+              <label for="card">Card number</label>
+              <input
+                type="text"
+                name="card"
+                id="card"
+                maxlength="16"
+                placeholder="Enter card"
+              />
+              <label for="comment">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                placeholder="Enter text"
+              ></textarea>
+              <button type="submit" class="modal-buynow__button">Submit</button>
+            </form>
+          </div>
+        </div>
       </section>
-      <section class="choc-loved container">
+      <section class="choc-loved container" id="chocisloved">
         <h2 class="choc-loved__title">
           <span class="title--color">chocolate</span> is loved
         </h2>
@@ -490,7 +654,9 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <button class="button">Leave a review</button>
+        <button type="button" class="button" data-modals-open>
+          Leave a review
+        </button>
       </section>
       <section class="subscribe container">
         <h2 class="subscribe__title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
@@ -500,7 +666,7 @@
           with only the finest ingredients and handcrafted with the utmost care,
           each piece is a work of art that is sure to please.
         </p>
-        <button class="button">Subscribe</button>
+        <button class="button button-subscribe">Subscribe</button>
       </section>
     </main>
     <footer class="footer container">
@@ -537,13 +703,125 @@
         </div>
       </div>
       <ul class="footer-menu">
-        <li>Home</li>
-        <li>How it’s made?</li>
-        <li>Our products</li>
-        <li>Top sellers</li>
-        <li>Chocolate is loved</li>
+        <li><a href="#home" class="menu-mobile__link">Home</a></li>
+        <li>
+          <a href="#howmade" class="menu-mobile__link">How it’s made?</a>
+        </li>
+        <li>
+          <a href="#ourproduct" class="menu-mobile__link">Our products</a>
+        </li>
+        <li>
+          <a href="#topselers" class="menu-mobile__link">Top sellers</a>
+        </li>
+        <li>
+          <a href="#chocisloved" class="menu-mobile__link"
+            >Chocolate is loved</a
+          >
+        </li>
       </ul>
     </footer>
+    <!-- Modal chocloved -->
+    <div class="backdrop is-hidden" data-modals>
+      <div class="modal-chocloved">
+        <h2 class="modal-chocloved_title">
+          leave a review about
+          <span class="title--color"> our chocolate</span>
+        </h2>
+        <div class="modal-chocloved__bt-close">
+          <svg
+            width="12"
+            hegjt="12"
+            our
+            chocolate
+            class="modal-chocloved__icon-cl-menu"
+            data-modals-close
+          >
+            <use href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"></use>
+          </svg>
+        </div>
+
+        <form class="modal-chocloved__form">
+          <label for="name"></label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <label for="phone"></label>
+          <div class="form_phone">
+            <div class="phone-icone">
+              <svg width="24" height="18">
+                <use href="./img/svg/icomoon/symbol-defs.svg#icon-Frame"></use>
+              </svg>
+              <p class="phone-icone__discription">+380</p>
+            </div>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone number"
+            />
+          </div>
+
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Enter text"
+          ></textarea>
+          <button type="submit" class="modal-buynow__button">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal Subscribe -->
+    <div class="backdrop-subscribe is-hidden">
+      <div class="modal-subscribe">
+        <div class="modal-subscribe__bground">
+          <div class="modal-subscribe__bt-close">
+            <svg
+              width="12"
+              hegjt="12"
+              our
+              chocolate
+              class="modal-subscribe__icon-cl-menu"
+            >
+              <use
+                href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-subscribe__form-block">
+          <h2 class="modal-subscribe_title">
+            leave a review about
+            <span class="title--color"> our chocolate</span>
+          </h2>
+          <div class="form-input">
+            <form class="modal-subscribe__form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+
+              <button type="submit" class="modal-subscribe__button">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/swiper-bundl.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
@@ -554,5 +832,6 @@
         },
       });
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

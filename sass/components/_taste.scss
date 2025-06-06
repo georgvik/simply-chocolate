@@ -22,21 +22,11 @@
   text-align: center;
   color: getColor("primaryText");
 }
-.tasteHover__discription {
-  display: none;
-}
-.taste__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
-}
-.taste__item {
-  display: block;
+.taste__item-block {
   position: relative;
+  padding: 28px 55px 71px 55px;
   width: 335px;
   height: 270px;
-  padding: 28px 55px 71px 55px;
   border-radius: 15px;
   border: 1px solid getColor("primary");
 
@@ -46,6 +36,50 @@
   &--bkcolor {
     background-color: getColor("secondary");
   }
+  &:hover {
+    .tasteHover__block {
+      display: block;
+      transform: translateY(0%);
+    }
+  }
+}
+.tasteHover__block {
+  position: absolute;
+  display: none;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  border-radius: 15px;
+  background-color: getColor("secondaryText");
+  transform: translateY(-100%);
+  transition: transform 450ms linear;
+}
+.tasteHover__title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: getColor("primary");
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.tasteHover__discription {
+  margin: 0;
+  color: getColor("primaryText");
+  text-align: left;
+}
+.taste__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.taste__item {
+  display: block;
+  // position: relative;
 }
 .taste-img {
   display: block;

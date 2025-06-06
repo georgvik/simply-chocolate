@@ -53,6 +53,10 @@
   background-color: getColor("primary");
   color: getColor("secondaryText");
   font-family: "Montserrat", sans-serif;
+  &:hover {
+    background: getColor("hover-btn");
+    color: getColor("primary");
+  }
 }
 @media (min-resolution: 2dppx) {
   .start-page__block {
@@ -73,4 +77,8 @@
   font-weight: 600;
   background: none;
   color: getColor("secondaryText");
+  &:hover {
+    background: getColor("primaryText");
+    color: getColor("secondaryText");
+  }
 }

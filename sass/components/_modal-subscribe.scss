@@ -1,0 +1,122 @@
+.backdrop-subscribe {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(164, 183, 205, 0.8);
+  transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-subscribe {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 311px;
+  height: 350px;
+
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: getColor("button");
+}
+.modal-subscribe__bground {
+  width: 100%;
+  height: 169px;
+  background-image: url(../img/subscribe.jpg);
+  background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/subscribe@2x.jpg);
+  }
+}
+.modal-subscribe__form-block {
+  width: 100%;
+  height: 181px;
+  padding: 32px 24px;
+}
+.modal-subscribe_title {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: getColor("primaryText");
+}
+.modal-subscribe__icon-cl-menu {
+  stroke: getColor("secondaryText");
+}
+.modal-subscribe__bt-close {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    background-color: getColor("hover-btn");
+
+    .modal-subscribe__icon-cl-menu {
+      stroke: getColor("primary");
+    }
+  }
+}
+.form-input {
+  position: relative;
+  width: 263px;
+  border-radius: 25px;
+  height: 45px;
+  border-style: solid;
+  border-color: rgba(17, 17, 17, 0.05);
+  border-width: 1.5px;
+  box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.03);
+  background-color: getColor("secondaryText");
+  input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding: 14px 18px;
+    border: none;
+    color: getColor("primaryText");
+    text-align: left;
+    border-radius: 25px;
+  }
+}
+
+.modal-subscribe__button {
+  display: block;
+  position: absolute;
+  bottom: 45px;
+  left: 263px;
+  transform: translateX(-100%);
+  width: 100px;
+  height: 45px;
+  background: getColor("primary");
+  border-radius: 100px;
+  border: none;
+  padding: 12px 28px 12px 28px;
+  display: flex;
+  position: relative;
+  color: getColor("secondaryText");
+  font-weight: 600;
+  &:hover {
+    background: getColor("hover-btn");
+    color: getColor("primary");
+  }
+}
