@@ -23,6 +23,41 @@
           <use href="./img/svg/icomoon/symbol-defs.svg#icon-header-icon"></use>
         </svg>
       </a>
+      <nav class="header__nav">
+        <ul class="header-nav__list">
+          <li>
+            <a href="#home" class="header-nav__link">Home</a>
+          </li>
+          <li>
+            <a href="#howmade" class="header-nav__link">How it’s made?</a>
+          </li>
+          <li>
+            <a href="#ourproduct" class="header-nav__link">Our products</a>
+          </li>
+          <li>
+            <a href="#topselers" class="header-nav__link">Top sellers</a>
+          </li>
+          <li>
+            <a href="#chocisloved" class="header-nav__link"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__social-list">
+        <li>
+          <svg width="22" height="22" class="header__social-block-svg">
+            <use href="./img/svg/icomoon/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </li>
+        <li>
+          <svg width="22" height="22" class="header__social-block-svg">
+            <use href="./img/svg/icomoon/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </li>
+      </ul>
+
+      <!-- Menu if screen < 1200 -->
       <button
         type="button"
         class="button header__menu js-open-menu"
@@ -38,11 +73,9 @@
 
       <div class="menu-mobile js-menu-container" id="mobile-menu">
         <button type="button" class="menu-mobile__close-btn js-close-menu">
-          <!-- <div class="menu-mobile__close-btn"> -->
           <svg width="12" height="12" class="menu-mobile__close-icon">
             <use href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"></use>
           </svg>
-          <!-- </div> -->
         </button>
         <ul class="menu-mobile__list">
           <li><a href="#home" class="menu-mobile__link">Home</a></li>
@@ -91,14 +124,14 @@
               Treat yourself or a loved one to our finest ingredients for a
               moment of pure delight!
             </p>
-            <button class="button buynow">Buy now</button>
-            <button class="button howmade">How it’s made</button>
+            <button type="button" class="button buynow">Buy now</button>
+            <button type="button" class="button howmade">How it’s made</button>
           </div>
         </div>
       </section>
       <section class="benefits container">
         <ul class="benefits__list">
-          <li>
+          <li class="benefits_item">
             <div class="benefits__inform">
               <div class="benefits__icon">
                 <svg width="32" height="32">
@@ -116,7 +149,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="benefits_item">
             <div class="benefits__inform">
               <div class="benefits__icon">
                 <svg width="32" height="32">
@@ -276,50 +309,55 @@
         <h2 class="how-made__title">
           hOW IT’S <span class="title--color">made?</span>
         </h2>
-        <img
-          class="how-made__img"
-          srcset="
-            ./img/howmade/image_mobile.jpg    1x,
-            ./img/howmade/image_mobile@2x.jpg 2x
-          "
-          src="./img/howmade/image_mobile.jpg"
-          alt="How it`s made"
-        />
-        <div class="how-made__block">
-          <h3 class="how-made__title-list">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="how-made__list">
-            <li>
-              <p class="how-made__discription">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li>
-              <p class="how-made__discription">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li>
-              <p class="how-made__discription">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li>
-              <p class="how-made__discription">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
-            <li>
-              <p class="how-made__discription">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+        <div class="desktop-position">
+          <div class="how-made__video">
+            <img
+              class="how-made__img"
+              srcset="
+                ./img/howmade/image_mobile.jpg    1x,
+                ./img/howmade/image_mobile@2x.jpg 2x
+              "
+              src="./img/howmade/image_mobile.jpg"
+              alt="How it`s made"
+            />
+          </div>
+          <div class="how-made__block">
+            <h3 class="how-made__title-list">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
+            <ul class="how-made__list">
+              <li>
+                <p class="how-made__discription">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </p>
+              </li>
+              <li>
+                <p class="how-made__discription">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </p>
+              </li>
+              <li>
+                <p class="how-made__discription">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </p>
+              </li>
+              <li>
+                <p class="how-made__discription">
+                  Heat the mixture over low heat, letting it barely boil.
+                </p>
+              </li>
+              <li>
+                <p class="how-made__discription">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="our-products container" id="ourproduct">
@@ -417,7 +455,7 @@
                 class="our-products__img"
                 srcset="
                   ./img/our-product/roasted-fruits@1x.jpg 1x,
-                  ./img/our-product/roasted-fruits@1x.jpg 2x
+                  ./img/our-product/roasted-fruits@2x.jpg 2x
                 "
                 src="./img/our-product/roasted-fruits@1x.jpg"
                 alt="Dark chocolate"
@@ -467,15 +505,17 @@
             </p>
           </li>
           <li>
-            <img
-              class="top-selers__img"
-              srcset="
-                ./img/top-selers/top-seler-2.jpg    1x,
-                ./img/top-selers/top-seler-2@2x.jpg 2x
-              "
-              src="./img/top-selers/top-seler-2.jpg"
-              alt="Milk chocolate with nuts"
-            />
+            <div class="button-position">
+              <img
+                class="top-selers__img"
+                srcset="
+                  ./img/top-selers/top-seler-2.jpg    1x,
+                  ./img/top-selers/top-seler-2@2x.jpg 2x
+                "
+                src="./img/top-selers/top-seler-2.jpg"
+                alt="Milk chocolate with nuts"
+              />
+            </div>
           </li>
           <li class="top-selers__item--display">
             <img
@@ -489,7 +529,9 @@
             />
           </li>
         </ul>
-        <button type="button" class="button" data-modal-open>Buy now</button>
+        <button type="button" class="button position-tab" data-modal-open>
+          Buy now
+        </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-buynow">
             <h2 class="modal-buynow_title">
@@ -550,8 +592,10 @@
             </ul>
             <form class="modal-buynow__form">
               <label for="name">Personal information</label>
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="text" placeholder="Surname" />
+              <div class="form-flexbox-block">
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <input type="text" placeholder="Surname" />
+              </div>
               <label for="email">Email</label>
               <input
                 type="email"
@@ -686,14 +730,14 @@
         <div class="footer__social-block">
           <ul class="footer__social-list">
             <li>
-              <svg width="22" height="22">
+              <svg width="22" height="22" class="footer__social-block-svg">
                 <use
                   href="./img/svg/icomoon/symbol-defs.svg#icon-instagram"
                 ></use>
               </svg>
             </li>
             <li>
-              <svg width="22" height="22">
+              <svg width="22" height="22" class="footer__social-block-svg">
                 <use
                   href="./img/svg/icomoon/symbol-defs.svg#icon-twitter"
                 ></use>
@@ -703,18 +747,26 @@
         </div>
       </div>
       <ul class="footer-menu">
-        <li><a href="#home" class="menu-mobile__link">Home</a></li>
         <li>
-          <a href="#howmade" class="menu-mobile__link">How it’s made?</a>
+          <a href="#home" class="menu-mobile__link footer-menu__link">Home</a>
         </li>
         <li>
-          <a href="#ourproduct" class="menu-mobile__link">Our products</a>
+          <a href="#howmade" class="menu-mobile__link footer-menu__link"
+            >How it’s made?</a
+          >
         </li>
         <li>
-          <a href="#topselers" class="menu-mobile__link">Top sellers</a>
+          <a href="#ourproduct" class="menu-mobile__link footer-menu__link"
+            >Our products</a
+          >
         </li>
         <li>
-          <a href="#chocisloved" class="menu-mobile__link"
+          <a href="#topselers" class="menu-mobile__link footer-menu__link"
+            >Top sellers</a
+          >
+        </li>
+        <li>
+          <a href="#chocisloved" class="menu-mobile__link footer-menu__link"
             >Chocolate is loved</a
           >
         </li>
@@ -771,7 +823,7 @@
             id="comment"
             placeholder="Enter text"
           ></textarea>
-          <button type="submit" class="modal-buynow__button">Submit</button>
+          <button type="submit" class="modal-buynow__button">Send</button>
         </form>
       </div>
     </div>
@@ -824,7 +876,9 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/swiper-bundl.js"></script>
     <script>
+      const screenWidth = window.innerWidth;
       const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",

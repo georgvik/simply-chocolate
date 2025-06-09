@@ -781,3 +781,25 @@ button.swiper-pagination-bullet {
   max-width: 335px;
   height: 397px;
 }
+@media screen and (min-width: 768px) {
+  .swiper {
+    max-width: 736px;
+    height: 397px;
+  }
+  .swiper-wrapper {
+    position: relative;
+    max-width: 734px;
+    height: 364px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper {
+    max-width: 1136px;
+    height: 463px;
+  }
+  .swiper-wrapper {
+    position: relative;
+    max-width: 1130px;
+    height: 443px;
+  }
+}

@@ -50,3 +50,38 @@
   max-width: 306px;
   color: getColor("primaryText");
 }
+@media screen and (min-width: 768px) {
+  .top-selers {
+    position: relative;
+    padding: 100px 32px 0px 32px;
+  }
+  .top-selers__title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .top-selers__list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .button-position {
+    position: relative;
+    max-width: 100%;
+    height: 90px;
+  }
+  .position-tab {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 32px;
+    // transform: translateX(-100%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top-selers {
+  }
+  .top-selers__item--display {
+    display: block;
+  }
+}

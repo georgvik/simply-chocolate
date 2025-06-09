@@ -80,3 +80,33 @@
     stroke: getColor("primary");
   }
 }
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    width: 290px;
+    height: 100vh;
+    padding: 156px 81px 0 81px;
+  }
+  .menu-mobile__close-btn {
+    top: 24px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+  }
+  .menu-mobile__close-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .menu-mobile__link {
+    line-height: 1.14;
+    font-weight: 600;
+  }
+  .menu-mobile__social-block {
+    left: 32px;
+    bottom: 24px;
+  }
+  .menu-mobile__social-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

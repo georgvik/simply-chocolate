@@ -8,6 +8,7 @@
   transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
+  overscroll-behavior: none;
 }
 .is-hidden {
   opacity: 0;
@@ -25,12 +26,12 @@
   width: 311px;
   height: 471px;
   padding: 32px 24px;
-  //   border: 1px solid red;
   border-radius: 15px;
   background-color: getColor("button");
 }
 
 .modal-chocloved_title {
+  display: block;
   width: 255px;
   margin: 0;
   margin-bottom: 32px;
@@ -106,5 +107,86 @@ textarea::placeholder {
   &:hover {
     background: getColor("hover-btn");
     color: getColor("primary");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-chocloved {
+    width: 517px;
+    height: 631px;
+    padding: 40px;
+  }
+  .modal-chocloved_title {
+    width: 298px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .modal-chocloved__bt-close {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+  }
+  .form_phone {
+    margin: 0;
+    margin-bottom: 14px;
+  }
+  input,
+  textarea {
+    margin-bottom: 14px;
+    padding: 14px 18px;
+    width: 100%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: rgba(17, 17, 17, 0.05);
+    border-width: 1.5px;
+    box-shadow: 0px 5.44px 5.44px 0px rgba(0, 0, 0, 0.03);
+    color: getColor("primaryText");
+    text-align: left;
+  }
+  textarea {
+    height: 91px;
+    resize: none;
+    margin-bottom: 18px;
+  }
+
+  input,
+  textarea::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+  }
+  .modal-buynow__button {
+    width: 109px;
+    height: 41px;
+    background: getColor("primary");
+    border-radius: 100px;
+    border: none;
+    padding: 12px 28px 12px 28px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: getColor("secondaryText");
+    font-weight: 600;
+    &:hover {
+      background: getColor("hover-btn");
+      color: getColor("primary");
+    }
+  }
+  input,
+  textarea {
+    margin-bottom: 19px;
+    padding: 22px 24px;
+  }
+  textarea {
+    height: 137px;
+  }
+  .modal-buynow__button {
+    width: 117px;
+    height: 45px;
+    background: getColor("primary");
+    border-radius: 100px;
+    border: none;
+    padding: 14px 40px;
   }
 }

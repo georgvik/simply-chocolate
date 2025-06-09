@@ -68,3 +68,19 @@
   color: rgba(17, 17, 17, 0.7);
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .choc-loved {
+    padding: 100px 32px;
+  }
+  .swiper-slide {
+    padding: 0px 24px 42px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choc-loved {
+    padding: 51px 32px 128px 32px;
+  }
+  .swiper-slide {
+    padding: 0px 24px 42px 24px;
+  }
+}

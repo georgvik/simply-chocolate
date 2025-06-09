@@ -65,3 +65,16 @@
 }
 .button__ourproduct {
 }
+
+@media screen and (min-width: 768px) {
+  .our-products {
+    padding-left: 32px;
+    padding-top: 100px;
+  }
+  .our-products__primary-title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}

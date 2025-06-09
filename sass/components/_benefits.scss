@@ -8,6 +8,7 @@
 .benefits__list {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   row-gap: 20px;
 }
 .benefits__icon {
@@ -25,7 +26,61 @@
   color: getColor("secondaryText");
 }
 .benefits__description {
+  display: block;
   margin: 0;
   width: 308px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: getColor("secondary");
+  }
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: getColor("secondary");
+  }
+  .benefits__list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+  .benefits_item {
+    position: relative;
+  }
+  .benefits_item::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    top: 60px;
+    right: -18px;
+    margin-top: -1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 1px 0 0 0;
+    flex-shrink: 0;
+    width: 122px;
+    height: 0px;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+  }
 }

@@ -175,3 +175,92 @@ textarea::placeholder {
     color: getColor("primary");
   }
 }
+
+@media screen and (min-width: 768px) {
+  .modal-buynow {
+    width: 609px;
+    max-height: 1058px;
+    padding: 48px;
+    //   border: 1px solid red;
+    border-radius: 15px;
+    background-color: getColor("button");
+    //   opacity: 0;
+    //   pointer-events: none;
+    transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(-50%);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .modal-buynow_bt-close {
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    padding: 7px 7px;
+  }
+  .modal-buynow_title {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  .modal-buynow__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 16px;
+  }
+  .modal-buynow__item-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 196px;
+    padding: 24px 20px 18px 20px;
+    button {
+      margin-top: 14px;
+      padding: 8px 29px 8px 29px;
+      color: getColor("primaryText");
+      font-weight: 600;
+    }
+  }
+  .modal-buynow__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    input,
+    textarea {
+      margin-bottom: 18px;
+      padding: 20px 24px;
+    }
+    textarea {
+      height: 137px;
+    }
+  }
+  .form-flexbox-block {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+  .form_phone {
+    margin-bottom: 18px;
+    max-width: 100%;
+    height: 66px;
+    input {
+      height: 100%;
+    }
+  }
+  .phone-icone {
+    width: 125px;
+    height: 32px;
+    margin-left: 24px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-right: 5px;
+    font-weight: 500;
+    color: getColor("primaryText");
+  }
+  .phone-icone__discription {
+    font-size: 18px;
+  }
+}
