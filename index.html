@@ -283,7 +283,10 @@
           <li class="taste__item">
             <div class="taste__item-block">
               <img
-                srcset="./img/Chocolate/semi-sweet@1x.jpg 1x. ./img/Chocolate/semi-sweet@2x.jpg 2x"
+                srcset="
+                  ./img/Chocolate/semi-sweet@1x.jpg 1x,
+                  ./img/Chocolate/semi-sweet@2x.jpg 2x
+                "
                 src="./img/Chocolate/semi-sweet@1x.jpg"
                 alt="semi-sweet chocolate"
                 class="taste-img"
@@ -540,7 +543,7 @@
             <div class="modal-buynow_bt-close">
               <svg
                 width="12"
-                hegjt="12"
+                height="12"
                 class="modal-buynow__icon-cl-menu"
                 data-modal-close
               >
@@ -782,9 +785,7 @@
         <div class="modal-chocloved__bt-close">
           <svg
             width="12"
-            hegjt="12"
-            our
-            chocolate
+            height="12"
             class="modal-chocloved__icon-cl-menu"
             data-modals-close
           >
@@ -793,16 +794,21 @@
         </div>
 
         <form class="modal-chocloved__form">
-          <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Name" />
+          <label for="modal-chocloved-name"></label>
+          <input
+            type="text"
+            name="name"
+            id="modal-chocloved-name"
+            placeholder="Name"
+          />
           <label for="email"></label>
           <input
             type="email"
-            name="email"
-            id="email"
+            name="modal-chocloved-name-email"
+            id="modal-chocloved-name-email"
             placeholder="Enter your email"
           />
-          <label for="phone"></label>
+          <label for="modal-chocloved-phone"></label>
           <div class="form_phone">
             <div class="phone-icone">
               <svg width="24" height="18">
@@ -813,14 +819,14 @@
             <input
               type="tel"
               name="phone"
-              id="phone"
+              id="modal-chocloved-phone"
               placeholder="Phone number"
             />
           </div>
 
           <textarea
             name="comment"
-            id="comment"
+            id="modal-chocloved-comment"
             placeholder="Enter text"
           ></textarea>
           <button type="submit" class="modal-buynow__button">Send</button>
@@ -832,13 +838,7 @@
       <div class="modal-subscribe">
         <div class="modal-subscribe__bground">
           <div class="modal-subscribe__bt-close">
-            <svg
-              width="12"
-              hegjt="12"
-              our
-              chocolate
-              class="modal-subscribe__icon-cl-menu"
-            >
+            <svg width="12" height="12" class="modal-subscribe__icon-cl-menu">
               <use
                 href="./img/svg/icomoon/symbol-defs.svg#icon-close-menu"
               ></use>
@@ -852,12 +852,7 @@
           </h2>
           <div class="form-input">
             <form class="modal-subscribe__form">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-              />
+              <input type="email" name="email" placeholder="Enter your email" />
 
               <button type="submit" class="modal-subscribe__button">
                 Submit
